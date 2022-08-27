@@ -1,17 +1,15 @@
 
-import React from "react";
+import React from 'react';
 
-function Welcome(props)
-{
-  let welcomeMessage=`Welcome to Newton School.`;
-  return(
-    <div>
-    <h1>Hey!{props.name}</h1>
-    <h2>{welcomeMessage}</h2>
-    </div>
-  );
-  
-}
-
+const Welcome = ({name}) => {
+    let sayHi = `Hey ${name}!`;
+    let greetMessage = `Welcome to Newton School.`;
+    return (
+        <div>
+            <h1>{sayHi}</h1>
+            <h2>{greetMessage}</h2>
+        </div>
+    );
+};
 
 export default Welcome;
